@@ -1,0 +1,290 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('IMG/Banner.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade e cor aqui */
+    z-index: 1;
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background: rgb(8, 115, 117);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+}
+
+.content {
+    flex: 2;
+}
+
+.form-container {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Tipografia */
+h1, h2 {
+    color: rgb(8, 115, 117);
+}
+
+/* Listas */
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* Formulários */
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botões */
+button {
+    background-color: rgb(8, 115, 117);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(8, 115, 117);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fdfdfd !important; /* Verde profissional */
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15%;
+}
+
+/* Estilos de hover para os itens do menu */
+.navbar-nav .nav-link {
+    color: #087375 !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #087375 !important; /* Cor suave para o hover */
+    text-decoration: underline;
+}
+
+/* Estilos para o dropdown */
+.navbar-nav .dropdown-menu {
+    background-color: #087375 !important; /* Verde suave para o menu suspenso */
+    border-radius: 8px;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #087375; /* Cor mais escura para o hover do item */
+    color: #087375; /* Texto branco */
+}
+
+/* Toggler */
+.navbar-toggler-icon {
+    background-color: #087375; /* Verde um pouco mais claro para o ícone de alternância */
+}
+
+/* Ajuste responsivo */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* Teste */
+.teste {
+    background: linear-gradient(rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.footer-content h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.social-icon {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.whatsapp-contact {
+    margin-top: 20px;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57;
+}
+
+.whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* FAQ */
+.faq {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    margin-bottom: 20px;
+    color: #087375;
+}
+.faq {
+    width: 1000%; /* Garante que a seção ocupe 100% da largura disponível */
+    max-width: 1200px; /* Limita a largura máxima para manter a estética */
+    margin: 0 auto; /* Centraliza a seção na tela */
+    padding: 30px; /* Espaçamento interno igual ao da seção de conteúdo */
+    background-color: #f9f9f9; /* Cor de fundo para destacar a seção */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Ajustar a altura e a formatação das perguntas e respostas */
+.accordion-button {
+    font-size: 1.1rem; /* Tamanho de fonte adequado */
+    padding: 15px; /* Mais espaço ao redor do texto */
+}
+
+.accordion-body {
+    font-size: 1rem; /* Tamanho da fonte para as respostas */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.bd1{
+    background-image: url('IMG/Background.jpg');
+    background-repeat: repeat; /* Repete a imagem em ambas as direções */
+    background-size: auto; /* Tamanho original da imagem */
+}
